@@ -1,9 +1,36 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
-  <h1>Hello, I am Ayaka Asano.</br>
-  I am a full-stack web developer.</h1>
-  <h2></h2>
-    </div>
+<div class="wrapper">
+  <div class="hero-image">
+    <p>Hello, I am Ayaka Asano!</p>
+    <a class="scroll" href="#next-section">
+      <span></span>
+    </a>
   </div>
+
+
+  <section class="next-section" id="next-section">
+    <h2>ABOUT ME</h2>
+    <div class="avatar">
+      <div data-aos="fade-right">
+        <%= image_tag "beauty_1623966445410.jpg", class: "avatar-large", alt: "avatar-large" %>
+      </div>
+      <p>Hello, I am Ayaka Asano!</p>
+    </div>
+  </section>
+
+    <section class="next-section" id="next-section-2">
+    <h2>PROJECT</h2>
+    <div class="avatar">
+      <p>Hello, I am Ayaka Asano!</p>
+        <div data-aos="fade-left">
+          <%= image_tag "kyoro-survey-show.png", class: "project-photo", alt: "avatar-large" %>
+        </div>
+    </div>
+    </br></br>
+    <div class="avatar">
+        <div data-aos="fade-right">
+          <%= image_tag "kyoro-survey-show.png", class: "project-photo", alt: "avatar-large" %>
+        </div>
+      <p>Hello, I am Ayaka Asano!</p>
+    </div>
+  </section>
 </div>

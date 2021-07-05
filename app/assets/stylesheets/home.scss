@@ -1,0 +1,122 @@
+HTML SCSSResult Skip Results Iframe
+EDIT ON
+.wrapper {
+  width: 75vw;
+  margin: 0 auto;
+  color: #F5F5F5;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url(purple-sky.jpg);
+  background-size: cover;
+  p {
+    font-size: 32px;
+    color: white;
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: 4em;
+  width: 3em;
+  height: 3em;
+  border: 1px solid #F5F5F5;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover::before {
+    background: rgba(201,179,218,1);
+    animation-play-state: paused;
+   }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    box-shadow: 0 0 0 0 rgba(201,179,218,1);
+    border-radius: 50%;
+    opacity: 0;
+    animation: ripple1 3s infinite;
+  }
+  span {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    transform: rotate(-45deg);
+    border-left: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    z-index: 2;
+  }
+}
+
+@keyframes ripple1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 2em rgba(201,179,218,1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.next-section {
+  padding: 3em 1.5em;
+  background-color: #dfd5f4;
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: gray;
+    &::after {
+      content: '';
+      display: block;
+      width: 10%;
+      height: 2px;
+      margin-top: .5em;
+      margin-left: 45%;
+      background: #F5F5F5;
+
+    }
+  }
+  p {
+    padding: 1.5em;
+    color: gray;
+  }
+}
+
+#next-section-2 {
+  background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url(wallpapertip_plain-pastel-wallpaper.jpg);
+  .project-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+   p {
+    width: 50%;
+   }
+}
