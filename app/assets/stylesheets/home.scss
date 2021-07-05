@@ -103,13 +103,10 @@ EDIT ON
 
 #next-section-2 {
   background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url(wallpapertip_plain-pastel-wallpaper.jpg);
-  .project-photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
-  object-fit: cover;
 }
 
+#next-section-3 {
+  background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url();
 }
 
 .avatar {
@@ -119,4 +116,18 @@ EDIT ON
    p {
     width: 50%;
    }
+}
+
+.project-photo {
+  height: 350px;
+  width: 430px;
+  border-radius: 5%;
+  object-fit: fill;
+}
+
+.resume {
+  width: 500px;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: fill;
 }
