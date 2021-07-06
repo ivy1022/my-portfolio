@@ -109,6 +109,33 @@ EDIT ON
   background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url();
 }
 
+#next-section-4 {
+  background-image: linear-gradient(rgba(32, 32, 54, .1), rgba(32, 32, 54, .1)), url(https://wallpapercave.com/wp/wp2777468.png);
+  background-color: white;
+  padding: 3em 1.5em;
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: gray;
+    &::after {
+      content: '';
+      display: block;
+      width: 10%;
+      height: 2px;
+      margin-top: .5em;
+      margin-left: 45%;
+      background: #F5F5F5;
+
+    }
+  }
+  p {
+    padding: 1.5em;
+    color: gray;
+  }
+}
+
 .avatar {
   display: flex;
   justify-content: space-evenly;
@@ -123,6 +150,7 @@ EDIT ON
   width: 430px;
   border-radius: 5%;
   object-fit: fill;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .resume {
@@ -130,4 +158,5 @@ EDIT ON
   height: 100%;
   border-radius: 5%;
   object-fit: fill;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }

@@ -1,0 +1,126 @@
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+// // html{    background:url("http://www.philippefercha.com/img/home-page.jpg") no-repeat;
+// //   background-size: cover;
+// //   height:100%;
+// // }
+// *::-webkit-input-placeholder {
+//   color:gray;
+// }
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  padding-top:0px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#form-div {
+  background: #fff;
+  width: 450px;
+}
+
+.feedback-input {
+  color:gray;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight:300;
+  font-size: 14px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fff;
+  padding: 13px 13px 13px 13px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  border-bottom: 1px solid gray;
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  color: gray;
+  outline: none;
+  padding: 13px 13px 13px 13px;
+}
+
+.focused{
+  color:gray;
+  border:#30aed6 solid 2px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 90%;
+  border: 0px solid transparent;
+  cursor:pointer;
+  background-color: rgba(201,179,218,1);
+  color:white;
+  font-size:18px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight:300;
+  margin: 0 18px 18px;
+}
+
+#button-blue:hover{
+  background-color: #fff;
+  color: gray;
+  border: 1px solid;
+  border-color: gray;
+}
+
+.submit:hover {
+  color: #3498db;
+}
+
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+  border-color: gray;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
